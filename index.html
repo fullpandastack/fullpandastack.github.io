@@ -28,56 +28,52 @@
         <div class="container">
             <h2>Welcome to Ingram Contracting LLC</h2>
             <h1>ingramcontractingllc@gmail.com</h1>
-            <link rel="stylesheet" href="styles.css">
-            <body>
-                <div class="gallery-container">
-                    <div class="slider">
-                        <div class="slides">
-                            <div class="slide">
-                                <img src="https://files.catbox.moe/ehnncj.jpg" alt="Image 1" onclick= "openLightbox(0)">
-                            </div>
-                            <div class="slide">
-                            <img src="https://files.catbox.moe/nabp4d.jpg" alt="Image 2" onclick= "openLightbox(1)">
-                            </div>
-                            <div class="slide">
-                            <img src="https://files.catbox.moe/mvaxbu.jpg" alt="Image 3" onclick= "openLightbox(2)">
-                            </div>
-                            <div class="slide">
-                            <img src="https://files.catbox.moe/ptom4q.jpg" alt="Image 4" onclick= "openLightbox(3)">
-                            </div>
-                            <div class="slide">
-                            <img src="https://files.catbox.moe/1mt2kt.jpg" alt="Image 5" onclick= "openLightbox(4)">
-                            </div>
-                            <div class="slide">
-                            <img src="https://files.catbox.moe/k653go.jpg" alt="Image 6" onclick= "openLightbox(5)">
-                            </div>
-                            <div class="slide">
-                            <img src="https://files.catbox.moe/alid6w.jpg" alt="Image 7" onclick= "openLightbox(6)">
-                            </div>
-                            <div class="slide">
-                            <img src="https://files.catbox.moe/c7ks9b.jpg" alt="Image 8" onclick= "openLightbox(7)">
-                            </div>
-                            <div class="slide">
-                            <img src="https://files.catbox.moe/c6e5bo.jpg" alt="Image 9" onclick= "openLightbox(8)">
-                            </div>
+            <div class="gallery-container">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="https://files.catbox.moe/ehnncj.jpg" alt="Image 1" onclick="openLightbox(0)">
                         </div>
+                        <div class="slide">
+                            <img src="https://files.catbox.moe/nabp4d.jpg" alt="Image 2" onclick="openLightbox(1)">
+                        </div>
+                        <div class="slide">
+                            <img src="https://files.catbox.moe/mvaxbu.jpg" alt="Image 3" onclick="openLightbox(2)">
+                        </div>
+                        <div class="slide">
+                            <img src="https://files.catbox.moe/ptom4q.jpg" alt="Image 4" onclick="openLightbox(3)">
+                        </div>
+                        <div class="slide">
+                            <img src="https://files.catbox.moe/1mt2kt.jpg" alt="Image 5" onclick="openLightbox(4)">
+                        </div>
+                        <div class="slide">
+                            <img src="https://files.catbox.moe/k653go.jpg" alt="Image 6" onclick="openLightbox(5)">
+                        </div>
+                        <div class="slide">
+                            <img src="https://files.catbox.moe/alid6w.jpg" alt="Image 7" onclick="openLightbox(6)">
+                        </div>
+                        <div class="slide">
+                            <img src="https://files.catbox.moe/c7ks9b.jpg" alt="Image 8" onclick="openLightbox(7)">
+                        </div>
+                        <div class="slide">
+                            <img src="https://files.catbox.moe/c6e5bo.jpg" alt="Image 9" onclick="openLightbox(8)">
+                        </div>
+                    </div>
                     <div class="slider-nav">
-        <button class="prev">Prev</button>
-        <button class="next">Next</button>
-    </div>
+                        <button class="prev">Prev</button>
+                        <button class="next">Next</button>
                     </div>
                 </div>
-                <div id="lightbox" class="lightbox">
-    <span class="close" onclick="closeLightbox()">&times;</span>
-    <div class="lightbox-content">
-        <img id="lightbox-img" src="" alt="">
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </div>
-</div>
-                    <script src="scripts.js"></script>
-            </body>
-            
+            </div>
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    <img id="lightbox-img" src="" alt="">
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -88,7 +84,7 @@
             <p>Ingram Contracting LLC has been a contributing factor in the construction industry for over 7 years.
             <br> We specialize in residential construction, erosion control, odd jobs, hauling, grading, etc. providing top-quality service and results.
             <br> We have served countless numbers of happy customers and are always looking for more work.
-            <br> We are a certified utility and construction contractor and work with everyones safety as our top priority. </p>
+            <br> We are a certified utility and construction contractor and work with everyone's safety as our top priority.</p>
         </div>
     </section>
     
@@ -120,7 +116,7 @@
                 </div>
                 <div class="project-item">
                     <img src="https://files.catbox.moe/ycv2ea.png" alt="Project 2">
-                    <h1>Water Main (DIP - 6000ft+ laid) - Carmichael Farms, Canton, GA </h1>
+                    <h1>Water Main (DIP - 6000ft+ laid) - Carmichael Farms, Canton, GA</h1>
                 </div>
             </div>
         </div>
@@ -153,5 +149,8 @@
             <p>&copy; 2024 Ingram Contracting LLC. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
 </body>
 </html>
