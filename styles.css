@@ -112,7 +112,7 @@ footer {
 /* Container for slides */
 .slides {
     display: flex;
-    transition: transform 3s ease-in-out;
+    transition: transform 1s ease-in-out;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -120,8 +120,14 @@ footer {
     left: 0;
 }
 
-/* Styling for images inside the slides */
-.slides img {
+/* Each slide */
+.slide {
+    min-width: 100%; /* Ensure each slide takes up the full width */
+    height: 100%;
+}
+
+/* Styling for images inside slides */
+.slide img {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the container but may crop the image */
@@ -141,7 +147,7 @@ footer {
     }
 }
 
-/* Optional: Style for navigation buttons if you have any */
+/* Navigation buttons styling */
 .slider-nav {
     position: absolute;
     top: 50%;
