@@ -26,3 +26,27 @@ document.querySelector('.prev').addEventListener('click', prevSlide);
 
 // Show the first slide initially
 showSlide(currentSlide);
+
+let currentLightboxIndex = 0;
+const slideImages = document.querySelectorAll('.slide img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+function openLightbox(index) {
+    currentLightboxIndex = index;
+    showLightboxImage(index);
+    lightbox.style.display = 'block';
+}
+
+function closeLightbox() {
+    lightbox.style.display = 'none';
+}
+
+function showLightboxImage(index) {
+    lightboxImg.src = slideImages[index].src;
+}
+
+function changeSlide(n) {
+    currentLightboxIndex = (currentLightboxIndex + n + slideImages.length) % slideImages.length;
+    showLightboxImage(currentLightboxIndex);
+}
