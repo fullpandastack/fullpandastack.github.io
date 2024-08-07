@@ -109,8 +109,8 @@ footer {
 
 .slides {
   transition: transform 1s ease-in-out;
-  width: 40%;
-  height: 25%;
+  width: 35%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,8 +120,8 @@ footer {
 }
 
 .slides img {
-   max-width: 40%;
-  max-height: 25%;
+   max-width: 35%;
+  max-height: 20%;
   object-fit: contain;
 }
 
