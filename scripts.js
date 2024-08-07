@@ -1,15 +1,28 @@
-// scripts.js
-document.addEventListener('DOMContentLoaded', function() {
-    const slides = document.querySelector('.slides');
-    const images = document.querySelectorAll('.slides img');
-    const totalImages = images.length;
-    let currentIndex = 0;
-    const interval = 3000; // Time between slides in milliseconds
+let currentSlide = 0;
+const slides = document.querySelector('.slides');
+const slideImages = slides.querySelectorAll('img');
+const totalSlides = slideImages.length;
 
-    function showNextSlide() {
-        currentIndex = (currentIndex + 1) % totalImages;
-        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+function showSlide(index) {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
 
-    setInterval(showNextSlide, interval);
-});
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Automatically switch slides every 3 seconds
+setInterval(nextSlide, 3000);
+
+// Event listeners for navigation buttons
+document.querySelector('.next').addEventListener('click', nextSlide);
+document.querySelector('.prev').addEventListener('click', prevSlide);
+
+// Show the first slide initially
+showSlide(currentSlide);
